@@ -8,12 +8,9 @@ $("#currentDay").html(todayDate);
 // });
 // backround color depending on current time
 $(".time-block").each(function() {
+    // get current number of hours
     var currentTime = moment().hours();
-    console.log($(this)
-        .children()[0].textContent
-        .split(" ")[0]
-    );
-
+  
     var timeSlot = $(this)
     .children()[0].textContent
     .split(" ")[0];
