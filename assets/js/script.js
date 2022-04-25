@@ -30,4 +30,15 @@ $(".time-block").each(function() {
     }
 });
 
+// saveBtn save tasks when clicked
+$(".saveBtn").on("click", function() {
+    var tasks = $(this).siblings(".description").val();
+
+    var time = $(this).parent().attr("id")
+    
+    localStorage.setItem(time, tasks);
+});
+
+
+// saving data into local storage
 
